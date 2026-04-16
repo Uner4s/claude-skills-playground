@@ -1,8 +1,8 @@
 # claude-skills-playground
 
-A personal collection of [Claude Code](https://claude.ai/code) skills focused on enforcing a consistent and clean git workflow across projects.
+A personal collection of [Claude Code](https://claude.ai/code) skills and hooks — focused on enforcing consistent git workflows, code quality automation, and framework-specific scaffolding.
 
-Skills are concise by design — each one has a single clear rule, concrete steps, and nothing more. No fluff, no overengineering.
+Skills and hooks are concise by design. No fluff, no overengineering.
 
 ---
 
@@ -67,6 +67,32 @@ cp -r commit branch-health pull-request skill-creator ~/.claude/skills/
 - **No fluff** — no Overview, Background, or Introduction sections
 - **English only**
 - Skills are meant to work together: `branch-health` → `commit` → `pull-request` is the natural flow
+
+---
+
+## Hooks
+
+Hooks run **automatically** — no need to ask Claude. They trigger on Claude Code events and execute shell commands.
+
+> **Difference from skills:** A skill changes how Claude responds when you ask something. A hook runs a shell command automatically when a specific event occurs (file edited, Claude stops, etc.).
+
+### `hooks/ts-eslint.sh`
+**Trigger:** `PostToolUse` — after any `Edit`, `Write`, or `MultiEdit` on a `.ts` / `.tsx` file
+**What it does:** Runs ESLint on the specific file Claude just edited. Only activates if `tsconfig.json` exists in the project root.
+
+### `hooks/ts-typecheck.sh`
+**Trigger:** `Stop` — once when Claude finishes responding
+**What it does:** Runs `tsc --noEmit` on the full project. Only activates if `tsconfig.json` exists.
+
+### Installing hooks
+
+1. Copy scripts to `~/.claude/hooks/`:
+   ```bash
+   cp hooks/*.sh ~/.claude/hooks/
+   chmod +x ~/.claude/hooks/*.sh
+   ```
+
+2. Add the config from `hooks/settings.snippet.json` into your `~/.claude/settings.json`
 
 ---
 
