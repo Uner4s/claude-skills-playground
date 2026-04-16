@@ -7,6 +7,10 @@
           {
             "type": "command",
             "command": "~/.claude/hooks/ts-eslint.sh"
+          },
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/security-check.sh"
           }
         ]
       }
