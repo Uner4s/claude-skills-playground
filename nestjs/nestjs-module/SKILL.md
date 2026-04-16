@@ -11,7 +11,7 @@ description: Use when adding a new NestJS module or domain. Use when asked "crea
 
 1. Run project-scan to understand current structure:
    ```bash
-   bash ~/.claude/skills/project-scan/scripts/scan.sh
+   bash ~/.claude/skills/core/project-scan/scripts/scan.sh
    ```
 2. Load `references/conventions.md` — structure and naming rules
 

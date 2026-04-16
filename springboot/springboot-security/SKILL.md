@@ -34,5 +34,5 @@ description: Use when protecting a Spring Boot endpoint or setting up JWT auth. 
 4. Add `JWT_SECRET` and `JWT_EXPIRATION` to `application.yml` via env vars — never hardcode
 5. Run `env-check` to confirm vars are set:
    ```bash
-   bash ~/.claude/skills/env-check/scripts/check-env.sh
+   bash ~/.claude/skills/core/env-check/scripts/check-env.sh
    ```

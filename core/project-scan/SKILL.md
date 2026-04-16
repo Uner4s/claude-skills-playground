@@ -18,7 +18,7 @@ description: Use before modifying, scaffolding, or refactoring code. Use when as
 
 1. Run the scan:
    ```bash
-   bash ~/.claude/skills/project-scan/scripts/scan.sh
+   bash ~/.claude/skills/core/project-scan/scripts/scan.sh
    ```
 
 2. From the output, identify:

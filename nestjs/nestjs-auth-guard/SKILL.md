@@ -11,7 +11,7 @@ description: Use when implementing auth or authorization in NestJS. Use when ask
 
 1. Check what already exists in `src/auth/` and `src/security/`:
    ```bash
-   bash ~/.claude/skills/project-scan/scripts/scan.sh
+   bash ~/.claude/skills/core/project-scan/scripts/scan.sh
    ```
 2. Load `references/strategies.md` — the two available strategies
 

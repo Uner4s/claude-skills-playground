@@ -11,7 +11,7 @@ description: Use before running the project locally, asked "check my env", "env 
 
 1. Run the check:
    ```bash
-   bash ~/.claude/skills/env-check/scripts/check-env.sh
+   bash ~/.claude/skills/core/env-check/scripts/check-env.sh
    ```
 
 2. For each `MISSING` variable reported:

@@ -11,7 +11,7 @@ description: Use when adding a new Spring Boot domain or feature. Use when asked
 
 1. Run project-scan to check existing domain structure:
    ```bash
-   bash ~/.claude/skills/project-scan/scripts/scan.sh
+   bash ~/.claude/skills/core/project-scan/scripts/scan.sh
    ```
 2. Load `references/conventions.md` — structure, naming, and patterns
 

@@ -31,7 +31,7 @@ Never run `migrate dev` against a production database — it may reset data.
 
 Run `test-runner` to confirm no existing queries broke:
 ```bash
-bash ~/.claude/skills/test-runner/scripts/run-tests.sh
+bash ~/.claude/skills/core/test-runner/scripts/run-tests.sh
 ```
 
 ## Safety rules

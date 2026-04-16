@@ -11,12 +11,12 @@ description: Use when running tests, asked "run the tests", "are tests passing",
 
 1. Run tests:
    ```bash
-   bash ~/.claude/skills/test-runner/scripts/run-tests.sh
+   bash ~/.claude/skills/core/test-runner/scripts/run-tests.sh
    ```
 
 2. For coverage report:
    ```bash
-   bash ~/.claude/skills/test-runner/scripts/run-tests.sh --cov
+   bash ~/.claude/skills/core/test-runner/scripts/run-tests.sh --cov
    ```
 
 3. From the output, identify:

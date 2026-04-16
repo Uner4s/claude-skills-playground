@@ -11,7 +11,7 @@ description: Use when creating a new feature, module, or domain from scratch. Us
 
 1. Run project-scan to understand the actual project state:
    ```bash
-   bash ~/.claude/skills/project-scan/scripts/scan.sh
+   bash ~/.claude/skills/core/project-scan/scripts/scan.sh
    ```
 
 2. Identify the existing module closest to what you're building — use it as reference.
